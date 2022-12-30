@@ -230,7 +230,7 @@ export default {
               return {
                 path: p,
                 ...item,
-                modifiedTime: formatDate(item.modifiedTime),
+                modifiedTime: isFolder?"":formatDate(item.modifiedTime),
                 size: size,
                 isFolder: isFolder,
               };
