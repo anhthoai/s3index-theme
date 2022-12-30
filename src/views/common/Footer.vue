@@ -1,6 +1,6 @@
 <template>
   <footer class="footer">
-    <div class="columns is-mobile is-centered">
+    <div v-if="!hide" class="columns is-mobile is-centered">
       <div class="field is-grouped is-grouped-multiline">
         <div class="control">
           <div class="tags has-addons">
@@ -23,11 +23,13 @@
 
 <script>
 export default {
+
   props: {},
   watch: {},
   data: function () {
     return {
-      content: ""
+      content: "",
+      hide:true
     };
   },
   components: {},

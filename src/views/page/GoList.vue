@@ -257,7 +257,8 @@ export default {
       this.$copyText(path);
     },
     thum(url) {
-      return url ? `/${this.$route.params.id}:view?url=${url}` : "";
+      // return url ? `/${this.$route.params.id}:view?url=${url}` : "";
+      return url ? `/${this.$route.params.id}:/${url}` : "";
     },
     inited(viewer) {
       this.$viewer = viewer;
