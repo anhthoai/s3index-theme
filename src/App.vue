@@ -15,7 +15,7 @@ export default {
   },
   data: function() {
     return {
-      github: "https://github.com/Aicirou/goindex-theme-acrou",
+      github: "https://cdn.jsdelivr.net/gh/anhthoai/s3index-theme",
     };
   },
   watch: {
